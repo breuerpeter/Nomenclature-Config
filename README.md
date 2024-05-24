@@ -48,6 +48,7 @@ Note: components are separated by an underscore `_`
 | `pt`         | Point          |
 | `vec`        | Vector         |
 | `mat`        | Matrix         |
+| `fr`         | Frame         |
 
 Note: the prefix is followed by the name of the quantity (in a lowerCamelCase fashion)
 
@@ -57,6 +58,7 @@ Note: the prefix is followed by the name of the quantity (in a lowerCamelCase fa
 | ------------ | --------------------------------- |
 | `compXXX`    | `XXX` component of quantity       |
 | `hom`         | Homogeneous coordinates          |
+| `norm`         | Normalized                      |
 
 #### 3. (If applicable) reference frame
 

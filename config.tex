@@ -57,3 +57,35 @@
 
 \setabbreviationstyle{short-long-desc}
 \setabbreviationstyle[acronym]{short-long}
+
+% Commands for loading and configuring entries from .bib files
+
+\newcommand{\importSymbols}[2]{
+  \GlsXtrLoadResources[
+    src={nomenclature/#1/entries/symbols},
+    type=symbols,
+    group=#2,
+    selection={all},
+    set-widest
+  ]
+}
+
+\newcommand{\importTerms}[2]{
+  \GlsXtrLoadResources[
+    src={nomenclature/#1/entries/terms},
+    type=main,
+    group=#2,
+    selection={all},
+    set-widest
+  ]
+}
+
+\newcommand{\importAbbrvs}[2]{
+  \GlsXtrLoadResources[
+    src={nomenclature/#1/entries/abbreviations},
+    type=abbreviations,
+    group=#2,
+    selection={all},
+    field-aliases={identifier=type}
+  ]
+}
