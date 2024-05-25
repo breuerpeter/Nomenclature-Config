@@ -20,13 +20,16 @@
 
     Note: see [below](#key-naming-convention) for key conventions
     
-3. Include the file that prints the glossary in your project's main `.tex` file by adding the following line in the desired location
+3. Include the file that prints the nomenclature in your project's main `.tex` file by adding the following line in the desired location
 
     ```
     \input{nomenclature/config/print.tex}
     ```
 
-3. Build your project
+4. Make sure your project has all the packages listed at the top of `config.tex`
+
+
+5. Build your project
 
     ```
     pdflatex PROJECT_MAIN
