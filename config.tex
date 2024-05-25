@@ -3,6 +3,16 @@
 % ==============================================================================
 
 \usepackage[a4paper, portrait, margin=1.4in]{geometry}
+
+% Required for notation table
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{parnotes}
+\usepackage{amsmath,bm}
+
 \usepackage{amssymb}
 \usepackage[colorlinks]{hyperref}
 \usepackage[doublespacing]{setspace}
@@ -50,6 +60,7 @@
   \glsxtrgetgrouptitle{#2}{\thisgrptitle}%
   \glslongextraHeaderFmt\thisgrptitle
   \tabularnewline*\noalign{\vskip\normalbaselineskip}%
+  \hline
 }
 
 %\newglossary*{agency}{Agencies}

@@ -1,0 +1,122 @@
+\section*{Notation}
+
+\subsection*{General}
+
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{lllll}
+        \toprule
+        &
+        &
+        \multicolumn{2}{c}{\textbf{Subscript}} &
+        \\
+        \cline{3-4}
+        \addlinespace[1ex]
+        \textbf{Quantity} &
+        \textbf{Notation} &
+        Left & Right &
+        \textbf{Example}
+        \\
+        \midrule
+        Scalar &
+        lowercase &
+        n/a &
+        n/a &
+        $a=4$
+        \\
+        \addlinespace[1ex]
+        Vector &
+        lowercase, bold &
+        \color{blue}frame &
+        {\color{orange}from} $\rightarrow$ {\color{red}to} &
+        $_{\color{blue}\mathcal{A}}\bm{r}_{{\color{orange}A}\color{red}B}$
+        \\
+        \addlinespace[1ex]
+        Homogeneous vector &
+        lowercase, bold, tilde &
+        \color{blue}frame &
+        {\color{orange}from} $\rightarrow$ {\color{red}to} &
+        $_{\color{blue}\mathcal{A}}\tilde{\bm{r}}_{{\color{orange}A}\color{red}B}$
+        \\
+        \addlinespace[1ex]
+        Matrix &
+        uppercase, bold &
+        n/a &
+        n/a &
+        $\bm{A}$
+        \\
+        \addlinespace[1ex]
+        Transformation matrix\parnote{This includes passive rotations, homogeneous transformations, quaternions} &
+        uppercase, bold &
+        n/a &
+        {\color{red}to} $\leftarrow$ {\color{orange}from} &
+        $\bm{R}_{\color{red}B{\color{orange}A}}$
+        \\
+        \bottomrule
+    \end{tabularx}
+    \parnotes
+    \parnoteclear
+\end{table}
+
+$f(\bm{x};\bm{p})$ a quantity $f$ with variables $\bm{x}$ and (optionally) parameterized by parameters $\bm{p}$.
+
+\subsection*{Probability}
+
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{llll}
+        \toprule
+        \textbf{Property} &
+        \textbf{Notation}
+        \\
+        \midrule
+        Random variable (RV), state &
+        $X$, $x$
+        \\
+        \addlinespace[1ex]
+        Probability &
+        $P(X=x)=:P(X)$
+        \\
+        \addlinespace[1ex]
+        Conditional probability &
+        $P(X=x|Y=y)=:P(X|Y)$
+        \\
+        \addlinespace[1ex]
+        Expectation of a continuous RV &
+        $E[X]=:\mu$
+        \\
+        \addlinespace[1ex]
+        Expectation of a discrete RV &
+        $E[X]=:\mu$
+        \\
+        \addlinespace[1ex]
+        Expectation (continuous RV) of a function $g$ &
+        $E_{x\sim f(x)}[g(x)]=\int_{-\infty}^\infty g(x)f(x)dx$
+        \\
+        \addlinespace[1ex]
+        Expectation (discrete RV) of a function $g$ &
+        $E_{x\sim p(x)}[g(x)]=\sum_i g(x_i)p(x_i)$
+        \\
+        \addlinespace[1ex]
+        Variance &
+        $\mathrm{Var}[X]=:\sigma^2$
+        \\
+        \addlinespace[1ex]
+        Standard deviation &
+        $\mathrm{SD}[X]=:\sigma$
+        \\
+        \addlinespace[1ex]
+        Probability mass function\parnote{for discrete RVs} &
+        $p_X(x)=:p(x)$
+        \\
+        \addlinespace[1ex]
+        Probability density function\parnote{for continuous RVs} &
+        $f_X(x)=:f(x)$
+        \\
+        \addlinespace[1ex]
+        Cumulative distribution function &
+        $F_X(x)=:F(x)$
+        \\
+        \bottomrule
+    \end{tabularx}
+    \parnotes
+    \parnoteclear
+\end{table}

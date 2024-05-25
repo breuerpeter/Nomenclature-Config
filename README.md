@@ -45,24 +45,27 @@ Note: components are separated by an underscore `_`
 
 | Prefix       | Meaning        |
 | ------------ | -------------- |
+| (none)       | Scalar         |
 | `pt`         | Point          |
 | `vec`        | Vector         |
 | `mat`        | Matrix         |
-| `fr`         | Frame         |
+| `fr`         | Frame          |
+| `set`        | Set            |
+| `no`         | Number of      |
 
 Note: the prefix is followed by the name of the quantity (in a lowerCamelCase fashion)
 
-#### 2. (Optional) quantity details
+#### 2. (If applicable) reference frame
+
+Syntax: `frXXX` to indicate reference frame `XXX`
+
+#### 3. (Optional) quantity details
 
 | Abbreviation | Meaning                           |
 | ------------ | --------------------------------- |
 | `compXXX`    | `XXX` component of quantity       |
-| `hom`         | Homogeneous coordinates          |
-| `norm`         | Normalized                      |
-
-#### 3. (If applicable) reference frame
-
-Syntax: `frXXX` to indicate reference frame `XXX`
+| `hom`        | Homogeneous coordinates           |
+| `norm`       | Normalized coordinates            |
 
 ### Terms
 
@@ -70,3 +73,6 @@ Syntax: `frXXX` to indicate reference frame `XXX`
 
 #### 2. Term in lowerCamelCase
 
+## TODO
+
+Adding abbreviation subtitles (e.g. "Intialism") via `@indexplural{initialism,text={Initialism},topic={abbreviation}}` in `abbreviations.bib` is causing problems.
