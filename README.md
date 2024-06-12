@@ -46,15 +46,18 @@ Note: components are separated by an underscore `_`
 
 #### 1. Quantity descriptor
 
-| Prefix       | Meaning        |
-| ------------ | -------------- |
-| (none)       | Scalar         |
-| `pt`         | Point          |
-| `vec`        | Vector         |
-| `mat`        | Matrix         |
-| `fr`         | Frame          |
-| `set`        | Set            |
-| `no`         | Number of      |
+| Prefix       | Meaning          |
+| ------------ | ---------------- |
+| (none)       | Scalar           |
+| `pt`         | Point            |
+| `vec`        | Vector           |
+| `mat`        | Matrix           |
+| `fr`         | Frame            |
+| `set`        | Set              |
+| `no`         | Number of        |
+| `fn`         | Function         |
+| `pr`         | Probability      |
+| `rv`         | Random variable  |
 
 Note: the prefix is followed by the name of the quantity (in a lowerCamelCase fashion)
 
